@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="My API App"/>
+    <Navbar />
+    <img class="logo" alt="Vue logo" src="./assets/j-logo.png">
+    <HelloWorld msg="Jishnu's API App"/>
+    <Cards />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Cards from './components/Cards.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Navbar,
+    Cards
   }
 }
 </script>
@@ -23,6 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.logo{
+  width: 200px;
+  height: 200px;
 }
 </style>
